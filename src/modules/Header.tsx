@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-        <div className="left">
+        <div className="bg-slate-500">
             <p>bgauthier.fr</p>
         </div>
         <div className="center">

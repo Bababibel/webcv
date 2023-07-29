@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "avenir";
+  src: url("./fonts/Avenir\ Next\ LT\ Pro\ Regular.otf");
+}

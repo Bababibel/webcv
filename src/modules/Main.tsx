@@ -1,15 +1,21 @@
 import Header from './Header'
-import Desktop from './Desktop'
-import Taskbar from './Taskbar'
+import Education from './Education'
+import Experiences from './Experiences'
+import Sidebar from './Sidebar'
 
 
 
 export default function Main() {
   return (
-    <div>
-      <Header />
-      <Desktop />
-      <Taskbar />
+    <div className="">
+      <div className="flex">
+        <div className="flex flex-col">
+          <Header />
+          <Education />
+          <Experiences />
+        </div>
+        <Sidebar />
+      </div>
     </div>
   )
 }
