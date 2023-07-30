@@ -17,11 +17,20 @@
 }
 
 @layer components {
+  body {
+    @apply text-base
+  }
   h4 {
     @apply text-2xl text-primary font-bold
   }
-  h5 {
+  .title {
+    @apply flex flex-row items-baseline
+  }
+  .title h5 {
     @apply text-lg text-secondary font-bold
+  }
+  .title p {
+    @apply text-xsm text-secondary
   }
   p.description {
     @apply text-lg text-xsm text-secondary italic mt-2
@@ -30,15 +39,21 @@
     @apply h-[1px] w-full bg-primary
   }
   section {
-    @apply ml-2
+    @apply ml-4
   }
   section h4 {
-    @apply ml-3
+    @apply ml-3 mt-4
   }
   ul {
-    @apply list-disc text-base text-primary ml-4
+    @apply list-disc text-sm text-base ml-4
   }
   ul.sublist {
     @apply list-["➱"]
+  }
+  .blocInfo {
+    @apply text-base
+  }
+  .blocInfo h5 {
+    @apply font-bold text-secondary mt-2
   }
 }

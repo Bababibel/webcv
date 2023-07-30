@@ -1,7 +1,7 @@
 export default function Experiences() {
   return (
     <section>
-      <h4>Experiences</h4>
+      <h4>Expériences professionnelles</h4>
       <div className="separator"></div>
     </section>
   )

@@ -38,9 +38,9 @@ export default {
         background: 'white'
       },
       'dark': { 
-        base: '#e2e8f0',
+        base: '#94a3b8',
         primary: 'rgb(56 189 248)',
-        secondary: '#94a3b8',
+        secondary: '#e2e8f0',
         background: 'rgb(15 23 42)'
       },
     })
