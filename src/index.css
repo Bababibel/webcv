@@ -1,14 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Avenir Next LT pro";
-  src: url("/fonts/Avenir\ Next\ LT\ Pro\ Regular.otf") format('opentype');
+@layer base {
+  @font-face {
+    font-family: "Avenir Next LT pro";
+    src: url("/fonts/Avenir\ Next\ LT\ Pro\ Regular.otf") format('opentype');
+  }
+  @font-face {
+    font-family: "Avenir";
+    src: url("/fonts/Avenir\ Regular.ttf") format('opentype');
+  }
+  body {
+    font-family: "Avenir Next LT pro";
+  }
 }
 
-* {
-  font-family: "prout";
-  font-family: "Avenir";
+@layer components {
+  h4 {
+    @apply text-2xl text-primary font-bold
+  }
+  h5 {
+    @apply text-lg text-secondary font-bold
+  }
+  p.description {
+    @apply text-lg text-xsm text-secondary italic mt-2
+  }
+  div.separator {
+    @apply h-[1px] w-full bg-primary
+  }
+  section {
+    @apply ml-2
+  }
+  section h4 {
+    @apply ml-3
+  }
+  ul {
+    @apply list-disc text-base text-primary ml-4
+  }
+  ul.sublist {
+    @apply list-["➱"]
+  }
 }
