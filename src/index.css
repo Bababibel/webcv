@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: "avenir";
-  src: url("./fonts/Avenir\ Next\ LT\ Pro\ Regular.otf");
+  font-family: "Avenir Next LT pro";
+  src: url("/fonts/Avenir\ Next\ LT\ Pro\ Regular.otf") format('opentype');
+}
+
+* {
+  font-family: "prout";
+  font-family: "Avenir";
 }

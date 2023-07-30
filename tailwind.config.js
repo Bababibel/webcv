@@ -4,7 +4,14 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'avenir': ['Avenir Next LT pro', 'Times New Roman']
+    },
+    extend: {
+      aspectRatio: {
+        'A4': '21 / 29.7'
+      }
+    },
   },
   plugins: [],
 }
