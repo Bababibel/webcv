@@ -13,12 +13,14 @@ export default function Sidebar() {
           <h4>Informations</h4>
           <h5>Site Web</h5>
           <p>bgauthier.fr</p>
-          <a href="tel:+33783068780">
+          <a href="tel:+33783068780" className="hover:text-primary">
             <h5>Téléphone</h5>
             <p>+33 (0)7 83 06 87 80</p>
           </a>
-          <h5>Email</h5>
-          <p>contact@bgauthier.fr</p>
+          <a href="mailto:contact@bgauthier.fr" className="hover:text-primary">
+            <h5>Email</h5>
+            <p>contact@bgauthier.fr</p>
+          </a>
           <h5>Permis B</h5>
           <p>Avec véhicule</p>
         </div>
