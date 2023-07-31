@@ -17,6 +17,9 @@
 }
 
 @layer components {
+  .text-subtitle {
+    @apply text-lg text-secondary font-bold
+  }
   body {
     @apply text-base
   }
@@ -54,6 +57,6 @@
     @apply text-base
   }
   .blocInfo h5 {
-    @apply font-bold text-secondary mt-2
+    @apply font-bold text-tertiary mt-2
   }
 }

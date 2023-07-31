@@ -2,6 +2,7 @@ import Header from './Header'
 import Education from './Education'
 import Experiences from './Experiences'
 import Sidebar from './Sidebar'
+import Skills from './Skills'
 
 export default function Main() {
 
@@ -28,6 +29,7 @@ export default function Main() {
           <Header />
           <Education />
           <Experiences />
+          <Skills />
         </div>
         <Sidebar />
       </main>

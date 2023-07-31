@@ -35,12 +35,14 @@ export default {
         base: 'black',
         primary: '#44546A',
         secondary: '#767171',
+        tertiary: '#3B3838',
         background: 'white'
       },
       'dark': { 
         base: '#94a3b8',
         primary: 'rgb(56 189 248)',
         secondary: '#e2e8f0',
+        tertiary: '#e2e8f0',
         background: 'rgb(15 23 42)'
       },
     })
