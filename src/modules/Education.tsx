@@ -1,4 +1,10 @@
+import tryhackmeLogo from '../assets/tryhackme.png'
+import tryhackmeDarkLogo from '../assets/tryhackme-dark.png'
+
 export default function Education() {
+
+  const tryhackmePath = document.documentElement.classList.contains('theme-dark') ? tryhackmeDarkLogo : tryhackmeLogo
+
   return (
     <section>
       <h4>Formations</h4>
@@ -31,14 +37,17 @@ export default function Education() {
         </ul>
       </div>
 
-      <div>
-        <p className="description">Janvier 2023</p>
-        <div className="title">
-          <h5>Certification Junior Penetration Tester </h5>
-          <p>&nbsp;learning path, TryHackMe.com</p>
+      <a href="https://tryhackme.com/path/outline/jrpenetrationtester" target="_blank" className="flex justify-between">
+        <div>
+          <p className="description">Janvier 2023</p>
+          <div className="title">
+            <h5>Certification Junior Penetration Tester </h5>
+            <p>&nbsp;learning path, TryHackMe.com</p>
+          </div>
+          <p className="text-base">Plateforme d'entrainement à la sécurité offensive & Capture The Flag orientés Web</p>
         </div>
-        <p className="text-base">Plateforme d'entrainement à la sécurité offensive & Capture The Flag orientés Web</p>
-      </div>
+        <img src={tryhackmePath} alt="" className="h-6 self-end justify-self-center relative -top-1 right-5" />
+      </a>
 
       <div>
         <p className="description">Juillet 2018</p>

@@ -5,7 +5,7 @@ export default function Skills() {
       <div className="separator"></div>
 
       <div>
-        <h5 className="mt-2 text-subtitle">Outils liés à la sécurité informatique</h5>
+        <h5 className="text-subtitle">Outils liés à la sécurité informatique</h5>
         <ul>
           <li className="">
             <span className="flex">
@@ -23,7 +23,7 @@ export default function Skills() {
       </div>
 
       <div>
-        <h5 className="mt-2 text-subtitle">Programmation</h5>
+        <h5 className="text-subtitle">Programmation</h5>
         <ul>
           <li className="">
             <span className="flex">
@@ -40,14 +40,14 @@ export default function Skills() {
         </ul>
       </div>
 
-      <span className="flex mt-1">
-        <h5 className="text-subtitle w-1/2">Systèmes d’exploitation</h5>
-        <p>Unix & Windows</p>
+      <span className="flex pt-1">
+        <h5 className="text-subtitle w-1/3">Systèmes d'exploitation</h5>
+        <p className="ml-[0.7rem]">Unix & Windows</p>
       </span>
 
-      <span className="flex mt-1">
-        <h5 className="text-subtitle w-1/2">Savoir-être</h5>
-        <p>Curieux, Rigoureux, Persévérant</p>
+      <span className="flex pt-1">
+        <h5 className="text-subtitle w-1/3">Savoir-être</h5>
+        <p className="ml-[0.7rem]">Curieux, Rigoureux, Persévérant</p>
       </span>
     </section>
   )

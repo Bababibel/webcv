@@ -1,5 +1,6 @@
 import profilePicture from '../assets/baptiste-gauthier.png'
 import insaLogo from '../assets/insa.png'
+import linkedinLogo from '../assets/linkedin.svg'
 import franceFlag from '../assets/france-flag.svg'
 import ukFlag from '../assets/uk-flag.svg'
 import spainFlag from '../assets/spain-flag.svg'
@@ -16,11 +17,11 @@ export default function Sidebar() {
           <h4>Informations</h4>
           <h5>Site Web</h5>
           <p>bgauthier.fr</p>
-          <a href="tel:+33783068780" className="hover:text-primary">
+          <a href="tel:+33783068780" className="hover:text-primary flex flex-col">
             <h5>Téléphone</h5>
             <p>+33 (0)7 83 06 87 80</p>
           </a>
-          <a href="mailto:contact@bgauthier.fr" className="hover:text-primary">
+          <a href="mailto:contact@bgauthier.fr" className="hover:text-primary flex flex-col">
             <h5>Email</h5>
             <p>contact@bgauthier.fr</p>
           </a>
@@ -55,6 +56,15 @@ export default function Sidebar() {
             <li>8+ ans de batterie, prestations sur scène et en orchestre</li>
             <li>Engagement auprès de plusieurs associations en école supérieure</li>
           </ul>
+        </div>
+
+        <div>
+          <h4>Liens</h4>
+          <div className="flex mt-2">
+            <a href="https://www.linkedin.com/in/baptiste-gauthier-cybersecurity/" target="_blank" className="w-1/6">
+              <img src={linkedinLogo} alt="LinkedIn logo" />
+            </a>
+          </div>
         </div>
     </nav>
   )

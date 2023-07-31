@@ -33,7 +33,7 @@ export default {
     createThemes({
       'light': { 
         base: 'black',
-        primary: '#44546A',
+        primary: '#445490',
         secondary: '#767171',
         tertiary: '#3B3838',
         background: 'white'

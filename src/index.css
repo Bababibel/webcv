@@ -5,11 +5,13 @@
 @layer base {
   @font-face {
     font-family: "Avenir Next LT pro";
+    font-weight: normal;
     src: url("/fonts/Avenir\ Next\ LT\ Pro\ Regular.otf") format('opentype');
   }
   @font-face {
-    font-family: "Avenir";
-    src: url("/fonts/Avenir\ Regular.ttf") format('opentype');
+    font-family: "Avenir Next LT pro";
+    font-weight: bold;
+    src: url("/fonts/Avenir\ Next\ LT\ Pro\ Bold.otf") format('opentype');
   }
   body {
     font-family: "Avenir Next LT pro";
@@ -17,11 +19,21 @@
 }
 
 @layer components {
+  body {
+    @apply text-base
+  }
+  section > div:not(.separator), section > a {
+    @apply p-1 mr-3
+  }
   .text-subtitle {
     @apply text-lg text-secondary font-bold
   }
-  body {
-    @apply text-base
+  a {
+    transition: all 0.1s ease-in-out;
+  }
+  a:hover {
+    transform: scale(1.01);
+    @apply shadow-lg
   }
   h4 {
     @apply text-2xl text-primary font-bold
@@ -36,16 +48,16 @@
     @apply text-xsm text-secondary
   }
   p.description {
-    @apply text-lg text-xsm text-secondary italic mt-2
+    @apply text-xsm text-secondary italic
   }
   div.separator {
-    @apply h-[1px] w-full bg-primary
+    @apply h-[2px] w-full bg-primary
   }
   section {
     @apply ml-4
   }
   section h4 {
-    @apply ml-3 mt-4
+    @apply ml-3 mt-2
   }
   ul {
     @apply list-disc text-sm text-base ml-4
@@ -59,4 +71,8 @@
   .blocInfo h5 {
     @apply font-bold text-tertiary mt-2
   }
+
+  /* section > * {
+    border: 1px red solid;
+  } */
 }
