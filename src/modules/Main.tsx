@@ -1,10 +1,11 @@
-import { useContext, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import Header from './Header'
 import Education from './Education'
 import Experiences from './Experiences'
 import Sidebar from './Sidebar'
 import Skills from './Skills'
+import Toolbar from './Toolbar'
 
 
 
@@ -41,7 +42,7 @@ export default function Main() {
 
   return (
     <div className="flex w-full h-full justify-center items-center bg-background">
-      <main className="flex aspect-A4 shadow-lg shadow-base/20 w-full max-w-[1000px] my-10" ref={mainRef}>
+      <main className="flex aspect-A4 shadow-lg shadow-base/20 w-full max-w-[1000px]" ref={mainRef}>
         <div className="flex flex-col w-full">
           <Header />
           <Education />
@@ -51,6 +52,7 @@ export default function Main() {
         <Sidebar />
       </main>
       <button className="absolute bg-secondary text-base-dark" onClick={() => setIsDarkMode(prev => !prev)}>Toggle</button>
+      <Toolbar />
     </div>
   )
 }
