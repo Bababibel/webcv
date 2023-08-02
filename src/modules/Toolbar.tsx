@@ -1,17 +1,39 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+
+import downloadDarkIcon from '../assets/icons/download-dark.svg'
+import downloadIcon from '../assets/icons/download.svg'
+import moonIcon from '../assets/icons/moon.svg'
+import sunIcon from '../assets/icons/sun.svg'
+import { MainContext } from '../misc/MainContext'
 
 export default function Toolbar() {
+  const { isDarkMode, setIsDarkMode, downloadModalRef } = useContext(MainContext)
   const [isOpened, setIsOpened] = useState<boolean>(true)
+
+  function toggleIsOpened() {
+    setIsOpened(prev => !prev)
+  }
+
   return (
-    <div className="fixed left-0 top-1/2 -translate-y-1/2 bg-secondary/10 flex justify-center transition-all border" style={{ transform: isOpened ? 'translateX(-2.5rem)' : 'none' }}>
-      <div className="flex flex-col w-10">
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+    <div 
+    className="fixed left-0 top-1/2 -translate-y-1/2 bg-background-secondary flex justify-center transition-all shadow-md" 
+    style={{ transform: isOpened ? 'none' : 'translateX(-2.5rem)' }}>
+      <div className="flex flex-col w-10 bg-background cursor-pointer">
+        <img 
+          title={isDarkMode ? 'Passer en thème clair' : 'Passer en thème sombre'}
+          src={isDarkMode ? sunIcon : moonIcon}
+          style={ isDarkMode ? {} : { padding: '0.4rem', position: 'relative', bottom: '0.1rem' } }
+          alt="Toggle dark mode" 
+          onClick={() => setIsDarkMode(prev => !prev)} />
+        <img 
+          title="Télécharger le CV en pdf"
+          src={isDarkMode ? downloadDarkIcon : downloadIcon}
+          alt="Toggle dark mode" 
+          className="p-2" 
+          onClick={downloadModalRef.current?.show} />
       </div>
-      <button className="" onClick={() => setIsOpened(prev => !prev)}>
-        {isOpened ? "<<" : ">>"}
+      <button className="text-2xl flex items-center p-[0.15rem] cursor-pointer" onClick={toggleIsOpened}>
+        {isOpened ? "<" : ">"}
       </button>
     </div>
   )

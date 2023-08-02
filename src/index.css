@@ -22,8 +22,11 @@
   body {
     @apply text-base
   }
+  section {
+    @apply flex flex-col gap-[0.48rem]
+  }
   section > div:not(.separator), section > a {
-    @apply p-1 mr-3
+    @apply pl-1
   }
   .text-subtitle {
     @apply text-lg text-secondary font-bold
@@ -33,7 +36,7 @@
   }
   a:hover {
     transform: scale(1.01);
-    @apply shadow-lg
+    @apply shadow-lg backdrop-brightness-[0.97] border-l-2 border-l-primary
   }
   h4 {
     @apply text-2xl text-primary font-bold
@@ -66,10 +69,13 @@
     @apply list-["➱"]
   }
   .blocInfo {
-    @apply text-base
+    @apply text-base flex flex-col gap-2
+  }
+  .blocInfo > *:not(h5) {
+    @apply pl-1
   }
   .blocInfo h5 {
-    @apply font-bold text-tertiary mt-2
+    @apply font-bold text-tertiary
   }
 
   /* section > * {

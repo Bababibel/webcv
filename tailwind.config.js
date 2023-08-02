@@ -36,14 +36,16 @@ export default {
         primary: '#445490',
         secondary: '#767171',
         tertiary: '#3B3838',
-        background: 'white'
+        background: 'white',
+        'background-secondary': '#F0F0F0'
       },
       'dark': { 
-        base: '#94a3b8',
-        primary: 'rgb(56 189 248)',
-        secondary: '#e2e8f0',
-        tertiary: '#e2e8f0',
-        background: 'rgb(15 23 42)'
+        base: '#94A3B8',
+        primary: '#38BAF8',
+        secondary: '#E2E8F0',
+        tertiary: '#E2E8F0',
+        background: '#0F172A',
+        'background-secondary': '#0A1227'
       },
     })
   ],
