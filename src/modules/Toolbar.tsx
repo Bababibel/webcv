@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react'
 
-import downloadDarkIcon from '../assets/icons/download-dark.svg'
-import downloadIcon from '../assets/icons/download.svg'
+import download
 import moonIcon from '../assets/icons/moon.svg'
 import sunIcon from '../assets/icons/sun.svg'
 import { MainContext } from '../misc/MainContext'
+import DownloadIcon from '../assets/svg/DownloadIcon'
 
 export default function Toolbar() {
   const { isDarkMode, setIsDarkMode, downloadModalRef } = useContext(MainContext)
@@ -25,9 +25,8 @@ export default function Toolbar() {
           style={ isDarkMode ? {} : { padding: '0.4rem', position: 'relative', bottom: '0.1rem' } }
           alt="Toggle dark mode" 
           onClick={() => setIsDarkMode(prev => !prev)} />
-        <img 
+        <DownloadIcon
           title="Télécharger le CV en pdf"
-          src={isDarkMode ? downloadDarkIcon : downloadIcon}
           alt="Toggle dark mode" 
           className="p-2" 
           onClick={downloadModalRef.current?.show} />
