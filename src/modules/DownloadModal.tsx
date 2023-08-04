@@ -22,11 +22,12 @@ export default function DownloadModal() {
         <SwitchInput state={isPictureDisplayed} setState={() => setIsPictureDisplayed(prev => !prev)} />
         <p>Inclure la photo de profil</p>
       </label>
-      <div className="mt-4">
-        <h6>Pour un rendu optimal :</h6>
+      <div className="mt-4 text-secondary">
+        <h6>Pour un rendu optimal, utilisez les paramètres suivants</h6>
         <ul>
-          <li>Choisissez la destination ou imprimante <em className="text-secondary font-bold">Enregistrer au format PDF</em></li>
-          <li>Paramètrez les marges sur <em className="text-secondary font-bold">Aucune</em></li>
+          <li>Imprimante : <em className="text-secondary font-bold">Enregistrer au format PDF</em></li>
+          <li>Marges : <em className="text-secondary font-bold">Aucune</em></li>
+          <li>Format : <em className="text-secondary font-bold">A4</em></li>
         </ul>
 
       </div>
