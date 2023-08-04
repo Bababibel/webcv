@@ -1,10 +1,9 @@
 import { useContext, useState } from 'react'
 
-import download
 import moonIcon from '../assets/icons/moon.svg'
 import sunIcon from '../assets/icons/sun.svg'
-import { MainContext } from '../misc/MainContext'
 import DownloadIcon from '../assets/svg/DownloadIcon'
+import { MainContext } from '../misc/MainContext'
 
 export default function Toolbar() {
   const { isDarkMode, setIsDarkMode, downloadModalRef } = useContext(MainContext)
@@ -13,7 +12,7 @@ export default function Toolbar() {
   function toggleIsOpened() {
     setIsOpened(prev => !prev)
   }
-
+  
   return (
     <div 
     className="fixed left-0 top-1/2 -translate-y-1/2 bg-background-secondary flex justify-center transition-all shadow-md" 
@@ -29,7 +28,7 @@ export default function Toolbar() {
           title="Télécharger le CV en pdf"
           alt="Toggle dark mode" 
           className="p-2" 
-          onClick={downloadModalRef.current?.show} />
+          onClick={() => downloadModalRef.current?.show()} />
       </div>
       <button className="text-2xl flex items-center p-[0.15rem] cursor-pointer" onClick={toggleIsOpened}>
         {isOpened ? "<" : ">"}
