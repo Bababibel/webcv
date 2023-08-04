@@ -2,6 +2,7 @@ import Toggle from 'react-toggle'
 
 import { useState } from 'react'
 import { useMainContext } from '../misc/MainContext'
+import SwitchInput from '../misc/SwitchInput'
 
 export default function DownloadModal() {
 
@@ -10,9 +11,7 @@ export default function DownloadModal() {
   return (
     <dialog ref={downloadModalRef}>
       <label>
-        <Toggle
-          defaultChecked={false}
-          onChange={e => setIsPictureEnabled(e.target.checked)} />
+        <SwitchInput state={isPictureEnabled} setState={setIsPictureEnabled} />
         <span>No icons</span>
       </label>
     </dialog>
