@@ -3,7 +3,10 @@ import { createContext, useContext } from 'react'
 export type MainContextT = {
   isDarkMode: boolean
   setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>
-  downloadModalRef: React.MutableRefObject<HTMLDialogElement | null>
+  isDownloadModalOpen: boolean
+  setIsDownloadModalOpen: React.Dispatch<React.SetStateAction<boolean>>
+  isPictureDisplayed: boolean
+  setIsPictureDisplayed: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const MainContext = createContext({} as MainContextT)

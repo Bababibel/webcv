@@ -77,8 +77,26 @@
   .blocInfo h5 {
     @apply font-bold text-tertiary
   }
-
+  dialog label {
+    @apply flex gap-2
+  }
   /* section > * {
     border: 1px red solid;
   } */
+  @media print {
+    html, body {
+      font-size: 19px !important;
+      height: 100vh; /* Use 100% here to support printing more than a single page*/
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden;
+      print-color-adjust: exact !important;
+      forced-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+    .HIDE_DOWNLOAD {
+      display: none !important;
+    }
+  }
 }
+

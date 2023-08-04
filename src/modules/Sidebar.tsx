@@ -1,13 +1,16 @@
 import profilePicture from '../assets/baptiste-gauthier.png'
-import linkedinLogo from '../assets/linkedin.svg'
 import franceFlag from '../assets/france-flag.svg'
-import ukFlag from '../assets/uk-flag.svg'
+import linkedinLogo from '../assets/linkedin.svg'
 import spainFlag from '../assets/spain-flag.svg'
+import ukFlag from '../assets/uk-flag.svg'
+import { useMainContext } from '../misc/MainContext'
 
 export default function Sidebar() {
+  const { isPictureDisplayed } = useMainContext()
+
   return (
     <nav className="flex flex-col justify-evenly bg-background-secondary w-[38%] p-2">
-        <div className="flex flex-col items-center gap-2">
+        <div className={`flex flex-col items-center gap-2 ${isPictureDisplayed ? 'block' : 'hidden'}`}>
           <img src={profilePicture} alt="Profile picture" className="w-full" />
         </div>
 

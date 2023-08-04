@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { MainContext, MainContextT } from './MainContext'
 
 const defaultIsDarkMode = localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
@@ -10,8 +10,9 @@ export default function MainContextProvider({
 }) {
 
   const [isDarkMode, setIsDarkMode] = useState<boolean>(defaultIsDarkMode)
-  const downloadModalRef = useRef<HTMLDialogElement | null>(null)
-  const defaultContext: MainContextT = { isDarkMode, setIsDarkMode, downloadModalRef }
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState<boolean>(false)
+  const [isPictureDisplayed, setIsPictureDisplayed] = useState<boolean>(true)
+  const defaultContext: MainContextT = { isDarkMode, setIsDarkMode, isDownloadModalOpen, setIsDownloadModalOpen, isPictureDisplayed, setIsPictureDisplayed }
 
   useEffect(() => {
     if (isDarkMode) {

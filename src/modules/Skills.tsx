@@ -42,12 +42,12 @@ export default function Skills() {
 
       <span className="flex">
         <h5 className="text-subtitle w-1/3">Systèmes d'exploitation</h5>
-        <p className="ml-[0.7rem]">Unix & Windows</p>
+        <p className="ml-[0.7rem] text-lg">Unix & Windows</p>
       </span>
 
       <span className="flex">
         <h5 className="text-subtitle w-1/3">Savoir-être</h5>
-        <p className="ml-[0.7rem]">Curieux, Rigoureux, Persévérant</p>
+        <p className="ml-[0.7rem] text-lg">Curieux, Rigoureux, Persévérant</p>
       </span>
     </section>
   )
