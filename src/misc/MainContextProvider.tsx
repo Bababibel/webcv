@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MainContext, MainContextT } from './MainContext'
+import { LanguageT, MainContext, MainContextT, SourceT } from './MainContext'
 
 const defaultIsDarkMode = localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
 
@@ -12,7 +12,12 @@ export default function MainContextProvider({
   const [isDarkMode, setIsDarkMode] = useState<boolean>(defaultIsDarkMode)
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState<boolean>(false)
   const [isPictureDisplayed, setIsPictureDisplayed] = useState<boolean>(true)
-  const defaultContext: MainContextT = { isDarkMode, setIsDarkMode, isDownloadModalOpen, setIsDownloadModalOpen, isPictureDisplayed, setIsPictureDisplayed }
+  const [lang, setLang] = useState<LanguageT>('fr')
+  const defaultContext: MainContextT = { isDarkMode, setIsDarkMode, isDownloadModalOpen, setIsDownloadModalOpen, isPictureDisplayed, setIsPictureDisplayed, getText, lang, setLang }
+
+  function getText(source: SourceT, key: string): string {
+    return source[lang][key] ?? '🚨 MISSING_TRANSLATION 🚨'
+  }
 
   useEffect(() => {
     if (isDarkMode) {

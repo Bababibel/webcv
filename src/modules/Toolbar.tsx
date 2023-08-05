@@ -1,12 +1,13 @@
 import { useContext, useState } from 'react'
 
+import DownloadIcon from '../assets/icons/DownloadIcon'
+import LanguageIcon from '../assets/icons/LanguageIcon'
 import moonIcon from '../assets/icons/moon.svg'
 import sunIcon from '../assets/icons/sun.svg'
-import DownloadIcon from '../assets/svg/DownloadIcon'
 import { MainContext } from '../misc/MainContext'
 
 export default function Toolbar() {
-  const { isDarkMode, setIsDarkMode, setIsDownloadModalOpen } = useContext(MainContext)
+  const { isDarkMode, setIsDarkMode, setIsDownloadModalOpen, setLang } = useContext(MainContext)
   const [isOpened, setIsOpened] = useState<boolean>(true)
 
   function toggleIsOpened() {
@@ -26,9 +27,13 @@ export default function Toolbar() {
           onClick={() => setIsDarkMode(prev => !prev)} />
         <DownloadIcon
           title="Télécharger le CV en pdf"
-          alt="Toggle dark mode" 
           className="p-2" 
           onClick={() => setIsDownloadModalOpen(true)} />
+        <LanguageIcon
+          title="Changer la langue"
+          className="p-2"
+          onClick={() => {setLang(prev => prev === 'fr' ? 'en' : 'fr'); console.log("cc")}} />
+          
       </div>
       <button className="text-2xl flex items-center p-[0.15rem] cursor-pointer" onClick={toggleIsOpened}>
         {isOpened ? "<" : ">"}

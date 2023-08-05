@@ -80,9 +80,6 @@
   dialog label {
     @apply flex gap-2
   }
-  /* section > * {
-    border: 1px red solid;
-  } */
   @media print {
     html, body {
       font-size: 19px !important;
