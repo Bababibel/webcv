@@ -31,7 +31,7 @@ export default function Toolbar() {
           onClick={() => setIsDownloadModalOpen(true)} />
         <LanguageIcon
           title="Changer la langue"
-          className="p-2"
+          className="p-2 relative"
           onClick={() => {setLang(prev => prev === 'fr' ? 'en' : 'fr'); console.log("cc")}} />
           
       </div>

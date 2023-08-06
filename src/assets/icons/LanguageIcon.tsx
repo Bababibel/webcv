@@ -6,15 +6,17 @@ import ukFlagSvg from '../uk-flag.svg'
 export default function LanguageIcon(props : any) {
   const { lang } = useMainContext()
 
-  switch(lang) {
-    case 'fr':
-      return (
-        <img src={ukFlagSvg} alt="" />
-      )
-    case 'en': {
-      return (
-        <img src={frFlagSvg} alt="" />
-      )
-    }
-  }
+  return (
+    <div {...props}>
+
+      <img 
+        src={lang === 'fr' ? frFlagSvg : ukFlagSvg} 
+        alt=""
+        className="w-1/3 absolute top-1 left-1 z-30" />
+      <img 
+        src={lang === 'en' ? frFlagSvg : ukFlagSvg} 
+        alt=""
+        className="z-10" />
+    </div>
+  )
 }
