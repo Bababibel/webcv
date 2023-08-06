@@ -3,7 +3,7 @@ import SwitchInput from '../misc/SwitchInput'
 
 export default function DownloadModal() {
 
-  let { isDownloadModalOpen, setIsDownloadModalOpen, isDarkMode, setIsDarkMode, isPictureDisplayed, setIsPictureDisplayed } = useMainContext()
+  let { isDownloadModalOpen, setIsDownloadModalOpen, isDarkMode, setIsDarkMode, isPictureDisplayed, setIsPictureDisplayed, lang, setLang } = useMainContext()
 
   function handleClose() {
     setIsDownloadModalOpen(false)
@@ -21,6 +21,10 @@ export default function DownloadModal() {
       <label>
         <SwitchInput state={isPictureDisplayed} setState={() => setIsPictureDisplayed(prev => !prev)} />
         <p>Inclure la photo de profil</p>
+      </label>
+      <label>
+        <SwitchInput state={lang === 'en'} setState={() => setLang(prev => prev === 'fr' ? 'en' : 'fr')} />
+        <p>Version anglaise</p>
       </label>
       <div className="mt-4 text-secondary">
         <h6>Pour un rendu optimal, utilisez les paramètres suivants</h6>

@@ -31,8 +31,8 @@ export default function Toolbar() {
           onClick={() => setIsDownloadModalOpen(true)} />
         <LanguageIcon
           title="Changer la langue"
-          className="p-2"
-          onClick={() => {setLang(prev => prev === 'fr' ? 'en' : 'fr'); console.log("cc")}} />
+          className="p-2 relative"
+          onClick={() => setLang(prev => prev === 'fr' ? 'en' : 'fr')} />
           
       </div>
       <button className="text-2xl flex items-center p-[0.15rem] cursor-pointer" onClick={toggleIsOpened}>
