@@ -80,6 +80,9 @@
   dialog label {
     @apply flex gap-2
   }
+  #toolbar > *:hover {
+    @apply scale-110 transition-all
+  }
   @media print {
     html, body {
       font-size: 19px !important;

@@ -8,7 +8,10 @@ const source: SourceT = {
     interests: 'Domaines d`\'intérêt : pentest, développement orienté sécurité, expertise-conseil en sécurité'
   },
   en: {
-    
+    title: 'French I.T. Security engineer',
+    lookup: 'Looking for a first job in Cybersecurity engineering',
+    lookup2: 'Tours (France, 37) or full remote position',
+    interests: 'Interests : pentest, security-oriented development, security consulting'
   }
 }
 

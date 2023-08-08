@@ -16,6 +16,9 @@ export default function MainContextProvider({
   const defaultContext: MainContextT = { isDarkMode, setIsDarkMode, isDownloadModalOpen, setIsDownloadModalOpen, isPictureDisplayed, setIsPictureDisplayed, getText, lang, setLang }
 
   function getText(source: SourceT, key: string): string {
+    // if (!source[lang][key]) {
+    //   throw new ReferenceError(`Missing translation for key ${key}`);
+    // }
     return source[lang][key] ?? '🚨 MISSING_TRANSLATION 🚨'
   }
 

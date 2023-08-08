@@ -11,11 +11,11 @@ export default function LanguageIcon(props : any) {
       <img 
         src={lang === 'fr' ? frFlagSvg : ukFlagSvg} 
         alt=""
-        className="w-1/3 absolute top-1 left-1 z-30" />
+        className="w-1/3 absolute top-1 left-1 z-30 border border-tertiary/50" />
       <img 
         src={lang === 'en' ? frFlagSvg : ukFlagSvg} 
         alt=""
-        className="z-10" />
+        className={`z-10 border border-tertiary/50 ${lang === 'fr' ? 'my-[0.05rem]' : ''}`} />
     </div>
   )
 }
