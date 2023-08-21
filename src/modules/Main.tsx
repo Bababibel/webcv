@@ -25,7 +25,7 @@ export default function Main() {
   }, [mainRef])
 
   return (
-      <div className="flex w-full h-full justify-center items-center bg-background">
+      <div className="flex w-full h-full justify-center items-center min-w-[500px]">
         <main className="flex aspect-A4 shadow-lg shadow-base/20 w-full max-w-[1000px]" ref={mainRef}>
           <div className="flex flex-col w-full">
             <Header />

@@ -20,7 +20,7 @@
 
 @layer components {
   body {
-    @apply text-base
+    @apply text-base bg-background
   }
   section {
     @apply flex flex-col gap-[0.48rem]
