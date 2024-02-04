@@ -7,20 +7,11 @@ const source: SourceT = {
   fr: {
     sectionTitle: 'Formations',
     insaNavigate: 'Cliquez pour naviguer vers le descriptif de la filière',
-    insaDesc: 'Diplôme remis en Septembre 2023',
+    insaDesc: 'Septembre 2023',
     insaTitle1: 'Ingénieur en Sécurité et Technologies Informatiques',
     insaTitle2: ', INSA Centre Val-de-Loire',
     insaItem1: '2 ans de classe préparatoire intégrée',
     insaItem2: '4 mois de stage à l\'étranger dans un environnement anglophone',
-    insaList1Title: 'Projets de groupe :',
-    insaList1Item1: 'Développement Web (React & Express)',
-    insaList1Item2: 'Attaques et défense de jeux de données anonymisées',
-    insaList1Item3: 'Développement d\'un jeu en réseau (Python & C)',
-    insaList1Item4: 'Gestion d\'une entreprise, stratégie et marketing',
-    insaList2Title: 'Enseignements d\'exploration :',
-    insaList2Item1: 'Cryptographie des communications',
-    insaList2Item2: 'Objets connectés',
-    insaList2Item3: 'Virtualisation et services Cloud',
     thmNavigate: 'Cliquez pour naviguer vers le site de TryHackMe',
     thmDesc: 'Janvier 2023',
     thmTitle1: 'Certification Junior Penetration Tester',
@@ -34,20 +25,11 @@ const source: SourceT = {
   en: {
     sectionTitle: 'Education',
     insaNavigate: 'Click to navigate to the department\'s presentation sheet',
-    insaDesc: 'Estimated graduate in September 2023',
+    insaDesc: 'September 2023',
     insaTitle1: 'I.T. Security engineer',
     insaTitle2: ', INSA Centre Val-de-Loire, France',
     insaItem1: '2-year preparatory class',
     insaItem2: '4-month internship in an English-speaking country',
-    insaList1Title: 'Student team projects:',
-    insaList1Item1: 'Web development (React & Express)',
-    insaList1Item2: 'Attack & defense of anonymized datasets',
-    insaList1Item3: 'Small network game development (Python & C)',
-    insaList1Item4: 'Business management, financial strategy, marketing',
-    insaList2Title: 'Exploration Courses:',
-    insaList2Item1: 'Communication Cryptography',
-    insaList2Item2: 'Connected Objects',
-    insaList2Item3: 'Virtualization and Cloud Services',
     thmNavigate: 'Click to navigate to TryHackMe\'s website',
     thmDesc: 'January 2023',
     thmTitle1: 'Junior Penetration Tester Certification',
@@ -82,24 +64,9 @@ export default function Education() {
           <ul>
             <li>{ getText(source, 'insaItem1') }</li>
             <li>{ getText(source, 'insaItem2') }</li>
-            <li>{ getText(source, 'insaList1Title') }
-              <ul className="sublist">
-                <li>{ getText(source, 'insaList1Item1') }</li>
-                <li>{ getText(source, 'insaList1Item2') }</li>
-                <li>{ getText(source, 'insaList1Item3') }</li>
-                <li>{ getText(source, 'insaList1Item4') }</li>
-              </ul>
-            </li>
-            <li>{ getText(source, 'insaList2Title') }
-              <ul className="sublist">
-                <li>{ getText(source, 'insaList2Item1') }</li>
-                <li>{ getText(source, 'insaList2Item2') }</li>
-                <li>{ getText(source, 'insaList2Item3') }</li>
-              </ul>
-            </li>
           </ul>
         </div>
-        <img src={insaLogo} alt="" className="h-6 relative top-2 right-5" />
+        <img src={insaLogo} alt="" className="h-5 relative top-2 right-5" />
       </a>
 
       <a href="https://tryhackme.com/path/outline/jrpenetrationtester" target="_blank" className="flex justify-between" title={getText(source, 'thmNavigate')}>

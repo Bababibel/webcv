@@ -1,7 +1,6 @@
 import profilePicture from '../assets/baptiste-gauthier.png'
 import franceFlag from '../assets/france-flag.svg'
 import linkedinLogo from '../assets/linkedin.svg'
-import spainFlag from '../assets/spain-flag.svg'
 import ukFlag from '../assets/uk-flag.svg'
 import { SourceT, useMainContext } from '../misc/MainContext'
 
@@ -21,8 +20,6 @@ const source: SourceT = {
     langEnHeader: 'Anglais',
     langEnDetail1: 'Compétences professionnelles',
     langEnDetail2: 'Certification TOEIC (930/990) en Avril 2022',
-    langEsHeader: 'Espagnol',
-    langEsDetail: 'Niveau A2 - Débutant',
     investTitle: 'Investissements personnels',
     investItem1: 'Développement & déploiement d\'une application mobile d\'automatisation de processus industriels',
     investItem2: '10+ ans de batterie, prestations sur scène et en orchestre',
@@ -45,13 +42,11 @@ const source: SourceT = {
     langEnHeader: 'English',
     langEnDetail1: 'Proficient - Professional skills',
     langEnDetail2: 'TOEIC certification (930/990) in April 2022',
-    langEsHeader: 'Spanish',
-    langEsDetail: 'A2 level - Beginner',
     investTitle: 'Personal investments',
     investItem1: 'Mobile application development & deployment for industrial process automation',
     investItem2: 'Drummer for 10+ years, multiple shows on stage & orchestra',
-    investItem3: 'Multiple school association involvments',
-    linksTitle: 'Lins',
+    investItem3: 'Multiple school association involvements',
+    linksTitle: 'Links',
     linksLinkedin: 'Visit my LinkeIn profile',
   }
 }
@@ -105,13 +100,6 @@ export default function Sidebar() {
             </h5>
             <p>{ getText(source, 'langEnDetail1') }</p>
             <p className="italic text-xsm">{ getText(source, 'langEnDetail2') }</p>
-          </div>
-          <div>
-            <h5 className="flex items-baseline gap-1">
-              <img src={spainFlag} alt="" className="h-2" />
-              { getText(source, 'langEsHeader') }
-            </h5>
-            <p>{ getText(source, 'langEsDetail') }</p>
           </div>
         </div>
 

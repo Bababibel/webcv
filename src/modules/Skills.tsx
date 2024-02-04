@@ -6,8 +6,8 @@ const source: SourceT = {
     category1: 'Expérimenté',
     category2: 'Bonne compréhension',
     secToolsTitle: 'Outils liés à la sécurité informatique',
-    secToolsItems1: 'Kali, Burp Suite, outils en CLI (Nmap, GuBuster, Fuff…)',
-    secToolsItems2: 'Metasploit, Frida, Ghidra, GDB',
+    secToolsItems1: 'SentinelOne, Cybereason, CyberArk, Forescout',
+    secToolsItems2: 'Digital Guardian, Kali, Burp Suite, Metasploit',
     progTitle: 'Programmation',
     progItems1: 'HTML/CSS, JavaScript (React), Python, C, Java',
     progItems2: 'SQL, C#,  PHP, Bash',
@@ -21,8 +21,8 @@ const source: SourceT = {
     category1: 'Experienced',
     category2: 'Good Understanding',
     secToolsTitle: 'Cybersecurity Tools',
-    secToolsItems1: 'Kali, Burp Suite, common CLI tools (Nmap, GuBuster, Fuff...)',
-    secToolsItems2: 'Metasploit, Frida, Ghidra, GDB',
+    secToolsItems1: 'SentinelOne, Cybereason, CyberArk, Forescout',
+    secToolsItems2: 'Digital Guardian, Kali, Burp Suite, Metasploit',
     progTitle: 'Programming',
     progItems1: 'HTML/CSS, JavaScript (React), Python, C, Java',
     progItems2: 'SQL, C#, PHP, Bash',
@@ -38,8 +38,10 @@ export default function Skills() {
 
   return (
     <section>
-      <h4>{ getText(source, 'sectionTitle') }</h4>
-      <div className="separator"></div>
+      <div>
+        <h4>{ getText(source, 'sectionTitle') }</h4>
+        <div className="separator"></div>
+      </div>
 
       <div>
         <h5 className="text-subtitle">{ getText(source, 'secToolsTitle') }</h5>

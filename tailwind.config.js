@@ -32,9 +32,9 @@ export default {
   plugins: [
     createThemes({
       'light': { 
-        base: 'black',
+        base: '#767171',
         primary: '#445490',
-        secondary: '#767171',
+        secondary: 'black',
         tertiary: '#3B3838',
         background: 'white',
         'background-secondary': '#F0F0F0'

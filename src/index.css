@@ -23,7 +23,7 @@
     @apply text-base bg-background
   }
   section {
-    @apply flex flex-col gap-[0.48rem]
+    @apply flex flex-col gap-[0.6rem]
   }
   section > div:not(.separator), section > a {
     @apply pl-1
@@ -65,8 +65,8 @@
   ul {
     @apply list-disc text-sm text-base ml-4
   }
-  ul.sublist {
-    @apply list-["➱"]
+  ul li { 
+    @apply ml-1
   }
   .blocInfo {
     @apply text-base flex flex-col gap-2
