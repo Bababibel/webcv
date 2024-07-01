@@ -7,7 +7,7 @@ const source: SourceT = {
       "Recherche d'un poste dans le domaine de la sécurité des applications",
     lookup2: "à Tours (37) ou en hybride / full remote",
     interests:
-      "Domaines d`'intérêt : sécurité des systèmes d'information, automatisations, développement sécurisé, expertise-conseil en sécurité, gestion du risque",
+      "Domaines d'intérêt : sécurité des systèmes d'information, automatisations, développement sécurisé, expertise-conseil en sécurité, gestion du risque",
   },
   en: {
     title: "French Cybersecurity engineer",
