@@ -12,10 +12,11 @@ const source: SourceT = {
     hsDesc: 'Depuis Septembre 2023',
     hsTitle1: 'Ingénieur Cybersécurité - Analyste sécurité',
     hsTitle2: ', Tours (37)',
-    hsItem1: 'Équipe en charge de la cybersécurité région EMEA (Europe, Moyen-Orient et Afrique)',
+    hsItem1: 'Poste opérationel dans une équipe EMEA (Europe, Moyen-Orient et Afrique)',
     hsItem2: 'Gestion technique d\'une crise cyber majeure internationale',
-    hsItem3: 'Mise en place et exploitation d\'outils de surveillance et de gestion du risque',
-    hsItem4: 'Interprétation et résolution des alertes générées par le SOC et les différents outils de sécurité',
+    hsItem3: 'Mise en place et gestion d\'outils de sécurité (EDR, DLP, NAC, VMS...) pour 6000+ utilisateurs',
+    hsItem4: 'Développement de scripts pour automatiser et améliorer certains outils de cybersécurité',
+    hsItem5: 'Supervision et passerelle technique pour le déploiement d\'un PAM (CyberArk)',
     wlNavigate: 'Cliquez pour naviguer vers le site de Worldline',
     wlDesc: 'Février - Août 2023 (6 mois)',
     wlTitle1: 'Stage - Ingénieur Étude et Développement',
@@ -42,10 +43,11 @@ const source: SourceT = {
     hsDesc: 'Since Septembre 2023',
     hsTitle1: 'Cybersecurity Engineer - Security Analyst',
     hsTitle2: ', Tours (37)',
-    hsItem1: 'Team in charge of cybersecurity in EMEA (Europe, Middle-East et Africa)',
+    hsItem1: 'Operational position for a cybersecurity team in EMEA (Europe, Middle-East et Africa)',
     hsItem2: 'Technical support for a major international cyber crisis',
-    hsItem3: 'Security tools implementation & maintenance for risks assessments',
-    hsItem4: 'Alert management raised by the external SOC (L2, L3) and the internal security tools',
+    hsItem3: 'Security tools implementation and management (EDR, DLP, NAC, VMS...) for 6000+ endpoints',
+    hsItem4: 'Script development for automation and enhancement of cybersecurity tools',
+    hsItem5: 'Technical supervision and assistance for a PAM solution deployment (CyberArk)',
     wlNavigate: 'Click to navigate to Worldline\'s website',
     wlDesc: 'February - August 2023 (6 months)',
     wlTitle1: 'Internship - Software Engineer',
@@ -92,6 +94,7 @@ export default function Experiences() {
           <li>{ getText(source, 'hsItem2') }</li>
           <li>{ getText(source, 'hsItem3') }</li>
           <li>{ getText(source, 'hsItem4') }</li>
+          <li>{ getText(source, 'hsItem5') }</li>
         </ul>
       </a>
 
