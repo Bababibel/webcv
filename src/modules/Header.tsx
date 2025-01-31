@@ -3,14 +3,13 @@ import { SourceT, useMainContext } from "../misc/MainContext"
 const source: SourceT = {
   fr: {
     title: "Ingénieur Cybersécurité",
-    lookup:
-      "Recherche d'un poste dans le domaine de la sécurité des applications",
+    lookup: "Recherche d'un poste dans le domaine de cybersécurité",
     lookup2: "à Tours (37) ou en hybride / full remote",
     interests:
       "Domaines d'intérêt : sécurité des systèmes d'information, automatisations, développement sécurisé, expertise-conseil en sécurité, gestion du risque",
   },
   en: {
-    title: "French Cybersecurity engineer",
+    title: "French Cybersecurity Engineer",
     lookup: "Looking for an application security engineering job",
     lookup2: "Tours (France, 37) or full remote position",
     interests:

@@ -6,8 +6,9 @@ const source: SourceT = {
     category1: "Expérimenté",
     category2: "Bonne compréhension",
     secToolsTitle: "Outils liés à la sécurité informatique",
-    secToolsItems1: "Burp Suite, SentinelOne (EDR), Cybereason (EDR), Forescout (NAC)",
-    secToolsItems2: "Kali, Metasploit, CyberArk (PAM), Digital Guardian (DLP), Qualys (VMS)",
+    secToolsItems1: "Burp Suite, SentinelOne, Cybereason, Forescout",
+    secToolsItems2:
+      "Kali, Metasploit, CyberArk (Pcloud), Digital Guardian, Qualys",
     progTitle: "Technologies",
     progItems1: "Docker, HTML/CSS, JavaScript (React), Python, Java",
     progItems2: "C, SQL, C#,  PHP, Bash",
@@ -22,7 +23,8 @@ const source: SourceT = {
     category2: "Familiar",
     secToolsTitle: "Cybersecurity Tools",
     secToolsItems1: "Burp Suite, SentinelOne, Cybereason, Forescout",
-    secToolsItems2: "Kali, Metasploit, CyberArk",
+    secToolsItems2:
+      "Kali, Metasploit, CyberArk (Pcloud), Digital Guardian, Qualys",
     progTitle: "Technologies",
     progItems1: "Docker, HTML/CSS, JavaScript (React), Python, Java",
     progItems2: "C, SQL, C#, PHP, Bash",
